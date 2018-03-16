@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VPN - Developer.pe</title>
+    <title>PWA - Developer.pe</title>
     <!-- Bootstrap core CSS -->
     <link href="../../../../static/general/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -50,10 +50,10 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="post-heading">
-              <h1>VPN</h1>
-              <h3 class="subheading">Conozcamos que es VPN</h3>
+              <h1>Progressive Web Apps</h1>
+              <h3 class="subheading">Conozcamos que son las PWA</h3>
               <span class="meta">Creado por: Oliver Sandoval,            
-                07/03/2018</span>
+                16/03/2018</span>
             </div>
           </div>
         </div>
@@ -62,21 +62,36 @@
 
     <!-- Post Content -->
     <article>
-      <div class="container">
+      <div class="container" >
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <p>{{ post2.descripcion }}</p>            
+            <p ALIGN="justify">En los últimos años un nuevo concepto ha adquirido mucha popularidad y está dando mucho que hablar.Las Progressive Web Apps o Aplicaciones Web Progresivas o PWA por su nombre en inglés, funcionan como Apps nativas pero se construyen utilizando tecnologías web.</p> 
+              
+            <h2 class="section-heading">¿Qué son las PWA?</h2>
+            <p ALIGN="justify">Como dijimos, las PWA son aplicaciones desarrolladas con tecnologías webs, HTML, CSS3 y JavaScript, pero que funcionan como apps nativas; estas tienen funciones como: </p>
+            <ul>
+                <li>Notificaciones Push</li>
+                <li>Trabajar sin conexión</li>
+                <li>Mejora en el tiempo de carga</li>
+                <li>Logran crear una muy buena interfaz</li>
+            </ul>
+            <img class="img-fluid" src="../../../../static/imagenes/1_hWVmsnBY6Fr6OoNvIU5pmg.png" alt="">
 
-            <h2 class="section-heading">{{ post2.subtitulo2 }}</h2>
-            <p>{{ post2.descripcion2 }}</p>
-            <img class="img-fluid" src="{{ post2.imagen }}" alt="">
-
-            <h2 class="section-heading">{{ post2.subtitulo3 }}</h2>
-            <p>{{ post2.descripcion3 }}</p>
-            <img src="{{ post2.imagen2 }}" class="img-fluid">
+            <h2 class="section-heading">
+            ¿ Cómo logran tener esas características?</h2>
+            <p ALIGN="justify">Las características que las PWA tienen, las logran apoyandose en ciertos conceptos, como lo son:</p>
+            <ul ALIGN="justify">
+                <li><strong>Diseño Responsive:</strong> Un concepto que ya lleva varios años en el mundo del desarrollo, que surgió por los diferentes dispositivos que salieron al mercado a los cuales las webs debieron adaptarse al tamaño de su pantalla.</li>
+                <li><strong>CSS y Frameworks:</strong> Esto para que la app tenga la apariencia o similitud de una app nativa.</li>
+                <li><strong>Service Workers:</strong> En palabras sencillas, podemos decir que son una secuencia de comandos que el navegador ejecuta en segundo plano, separado de la web. En la actualidad, ya incorporan funciones como notificaciones de aplicación y sincronización en segundo plano. En el futuro, los service workers soportarán cosas como sincronización periódica o perimetraje. La función principal que analizamos en este instructivo es la capacidad de interceptar y manejar solicitudes de red, incluida la administración programática de un caché de respuestas. Puedes tener mas información sobre ellos en el siguiente artículo de Google Developers: <li><a href="https://developers.google.com/web/fundamentals/primers/service-workers/?hl=es">https://developers.google.com/web/fundamentals/primers/service-workers/?hl=es.</a></li>
+                <li><strong>App Shell: </strong>Su tarea es separar la funcionalidad del contenido para cargarlos por separado, logrando que se logre tener la aplicación cacheada pudiendo usarla de manera off-line, y que, cuando se conecte a internet, se recargue el contenido usando otras tecnologias ya existentes.</li>
+                <li><strong>Manifiesto de Aplicación:</strong> Es un JSON, que permite al desarrollador controlar como se muestra la app al usuario, por ejemplo, colocandola en el HomeScreen </li>
+            </ul>
+            <img src="../../../../static/imagenes/pwa-reliable.png" class="img-fluid">
             
-            <h2 class="section-heading">{{ post2.subtitulo4 }}</h2>
-            <p>{{ post2.descripcion4 }}</p>
+            <p> Ahora que sabemos de que trata este nuevo concepto, solo queda explorarlo, aún queda ver si en el futuro todo el hype que están teniendo sigue en aumento, o solo quedan como un nuevo intento de Google para lograr facilitar el desarrollo web y la experiencia de usuario.</p>
+            <p>Aqui te dejo un link a la web de Google Developer para mayor información.</p>
+            <li><a href="https://developers.google.com/web/progressive-web-apps/">https://developers.google.com/web/progressive-web-apps/</a></li>
             <img src="{{ post2.imagen3 }}" class="img-fluid">
             <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>   
           </div>

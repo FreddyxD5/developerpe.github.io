@@ -14,7 +14,15 @@ h1, h2,h3, h4, h5, h6 {
     font-weight:800;
     font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
-
+div ul li a {
+    color:#212529;
+}
+ul li a {
+    color:blue;
+}
+li a{
+    color: blue;
+}
 a {
     color:#212529;
     -webkit-transition:all .2s;
@@ -173,7 +181,7 @@ header.masthead .page-heading, header.masthead .post-heading, header.masthead .s
 }
 @media only screen and (min-width:768px) {
     header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
-        padding:60px 0
+        padding:50px 0
     }
 }
 header.masthead .page-heading, header.masthead .site-heading {
@@ -348,3 +356,4 @@ footer .copyright {
     font-size:16px;
     padding:25px 35px
 }
+
