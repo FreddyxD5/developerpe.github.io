@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111610469-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111610469-2');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>¿Qué es Docker? - Developer.pe</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../static/general/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../../../static/general/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../../static/general/css/detail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../../static/css/w3.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../../static/imagenes/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../../../../index.html">DEVELOPER.PE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../listar_post_general.html">Post</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" id="inicio"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>¿Qué es Docker?</h1>
+              <h3 class="subheading">Hablemos de Docker.</h3>
+              <span class="meta">Creado por: Oliver Sandoval,            
+                19/03/2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p ALIGN="justify">En los últimos años los contenedores Linux se han convertido en una herramienta primordial para los desarrolladores, si bien, las máquinas virtuales nos permiten trabajar con distintos SO, muchas veces, cuando los recursos de memoria son escasos, no se puede trabajar tan fluidamente con estas.</p> 
+            <p ALIGN="justify">Es aquí donde entraron a tallar los contenedores, los cuales los podemos definir de manera sencilla como maquinas virtuales ligeras<strong>(tener en cuenta que no son exactamente eso)</strong>, uno de estos contenedores es <strong>Docker.</strong></p>              
+            <h2 class="section-heading">¿Qué es Docker?</h2>
+            <p ALIGN="justify">Docker es un proyecto de código abierto hecho en Go que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de Virtualización a nivel de sistema operativo en Linux.</p>
+            <p ALIGN="justify">Utiliza características de aislamiento de recursos del kernel Linux, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, evitando la sobrecarga de iniciar y mantener máquinas virtuales.</p>
+            <img class="img-fluid boder2 w3-hide-small" src="../../../../static/imagenes/dpcker.jpg" alt="">
+            <img class="img-fluid w3-hide-medium w3-hide-large" src="../../../../static/imagenes/dpcker.jpg" alt="">
+            <p ALIGN="justify">La definición parece no entenderse muy bien si no sabes los conceptos que allí se mencionan, explicado un poco mas simple,Docker nos permite crear contenedores de manera sencilla y rápida, logrando asi ahorrar hardware si es que no contamos con un ordenador potente, además de que el empaquetado del programa es mucho mas liviano siendo muy sencillo de enviar.</p>
+            <p ALIGN="justify">Los contenedores tienen 3 características principales: <strong>Portabilidad, Ligereza y Autosuficiencia</strong></p>
+
+            <h2 class="section-heading">Portabilidad</h2>
+            <p ALIGN="justify">El contenedor Docker lo podremos desplegar en cualquier otro sistema (MAC,Windows o Linux), con lo que nos ahorraremos el tener que instalar en este nuevo entorno todas aquellas aplicaciones que normalmente usemos.</p>
+            <img src="../../../../static/imagenes/docker-microsoft.jpg" class="img-fluid boder3 w3-hide-small">
+            <img src="../../../../static/imagenes/docker-microsoft.jpg" class="img-fluid w3-hide-medium w3-hide-large">
+            <h2 class="section-heading">Ligereza</h2>
+            <p ALIGN="justify">El peso de este sistema no tiene comparación con cualquier otro sistema de virtualización más convencional que estemos acostumbrados a usar. Por ejemplo, una de las herramientas de virtualización más extendida es VirtualBox, y cualquier imagen de Ubuntu que queramos usar en otro equipo pesará entorno a 1Gb si contamos únicamente con la instalación limpia del sistema. En cambio, un Ubuntu con Apache y una aplicación web, pesa alrededor de 180Mb, lo que nos demuestra un significativo ahorro a la hora de almacenar diversos contenedores que podamos desplegar con posterioridad.</p>
+            <img src="../../../../static/imagenes/ligereza.jfif" class="img-fluid boder w3-hide-small">
+            <img src="../../../../static/imagenes/ligereza.jfif" class="img-fluid w3-hide-medium w3-hide-large">
+            <h2 class="section-heading">Autosuficiencia</h2>
+            <p ALIGN="justify">Un contenedor Docker no contiene todo un SO completo, sino únicamente aquellas librerías, archivos y configuraciones necesarias para desplegar las funcionalidades que contenga. Asimismo, Docker se encarga de la gestión del contenedor y de las aplicaciones de este.</p>
+
+            <p ALIGN="justify">Nos ofrece un entorno similar a Git para, a base de "capas", controlar cada cambio que se haga en la máquina virtual o contenedor.</p>
+
+            <p ALIGN="justify">Para obtener esta fluidez Docker extiende <strong>LXC (LinuX Containers)</strong>, un sistema de virtualización ligero que permite crear múltiples sistemas totalmente aislados entre si sobre la misma máquina o sistema. Logra todo esto gracias, como se mencionó, a que no emula todo un sistema operativo completo.</p>
+            <img src="../../../../static/imagenes/doc.png" class="img-fluid boder2 w3-hide-small">
+            <img src="../../../../static/imagenes/doc.png" class="img-fluid w3-hide-large w3-hide-medium">
+            <p ALIGN="justify">Ademas, Docker esta compuesto por tres elementos fundamentales:</p>
+            <h2 class="section-heading">Contenedores Docker</h2>
+            <p ALIGN="justify">Son como un directorio, contienen todo lo necesario para que una aplicación pueda funcionar sin necesidad de acceder a un repositorio externo al contenedor.</p>
+            <h2 class="section-heading">Imágenes Docker</h2>
+            <p ALIGN="justify">De manera sencilla son SO con aplicaciones instaladas, las cuales se pueden usar como base para instalar mas dependencias. Claro está que estas imagenes son ligeras.</p>
+            <h2 class="section-heading">Repositorios Docker</h2>
+            <p ALIGN="justify">También conocidos como <strong>Registros Docker</strong>, contienen imágenes creadas por los usuarios y puestas a disposición del público. Puedes encontrar repositorios públicos y totalmente gratuitos o repositorios privados donde tendrás que comprar las imágenes que necesitarás.</p>
+            <hr>            
+            <p ALIGN="justify">Además te dejamos el vídeo que hicimos explicando de manera sencilla a que nos referimos con Docker y los contenedores y el link a su web oficial.</p>
+            <li ALIGN="justify"><a href="https://www.docker.com/">https://www.docker.com/</a></li><br>
+            <iframe width="350" height="195" src="https://www.youtube.com/embed/vqF9LFc7q1c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="w3-hide-large w3-hide-medium"></iframe>
+            <iframe width="720" height="395" src="https://www.youtube.com/embed/vqF9LFc7q1c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="w3-hide-small "></iframe>
+           
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/OpenYourMindSan?lang=es"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/openmindsan/"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCOzf2U3BTng85gsFJHvIInQ?view_as=public"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Developer.pe</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- Bootstrap core JavaScript -->
+    <script src="../../../../static/general/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../static/general/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../../../static/general/js/clean-blog.min.js"></script>
+    <script src="../../../../static/base/vendor/jquery-easing/jquery.easing.min.js"></script>  
+    <script src="../../../../static/base/js/creative.min.js"></script>
+  </body>
+
+</html>
