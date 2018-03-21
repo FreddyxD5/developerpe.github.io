@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111610469-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111610469-2');
+</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>¿Qué es GraphQL? - Developer.pe</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../static/general/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../../../static/general/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../../../../static/general/css/detail.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../../../static/css/w3.css">
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../../static/imagenes/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="../../../../index.html">DEVELOPER.PE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../listar_post_general.html">Post</a>
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" id="inicio"> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>¿Qué es GraphQL?</h1>
+              <h3 class="subheading">Hablemos de GraphQL</h3>
+              <span class="meta">Creado por: Oliver Sandoval,            
+                21/03/2018</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container" >
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p ALIGN="justify">El nacimiento de GraphQL se da en Facebook en el año 2012, al inicio solo se utilizó de manera interna, fue recién en el año 2015 cuando Facebook lo hace público, es allí donde empieza su popularidad. Conozcamos a que nos referimos y en que nos puede ayudar esta nueva manera de trabajar las Querys.</p> 
+              
+            <img class="img-fluid" src="../../../../static/imagenes/general/graph.png" alt="">
+              
+            <h2 class="section-heading">¿Qué es GraphQL?</h2>
+            <p ALIGN="justify">GraphQL, por así decirlo, es un lenguaje para ejecutar queries en un servidor API mediante el cual se provee al cliente de una descripción detallada de las estructuras de datos que ofrece.</p>
+            <p ALIGN="justify">Algunas de sus características y funcionalidades son:</p>
+            <ul>
+                <li>Existen múltiples librerías para implementar en distintos lenguajes (JavaScript, Go, Ruby, Python, Java …)</li>
+                <li>Permite solicitar al servidor tan sólo la información que necesitamos de un recurso en una sola petición incluyendo los datos de otros recursos que se relacionen con el recurso raíz.</li>
+                <li>Describe la estructura/organización de los datos ofrecidos por el API mediante un sistema de fuerte tipado en el que se detallan los recursos y las relaciones existentes entre estos.</li>    
+                <li>Permite la evolución de un API sin crear nuevas versiones</li>
+                <li>Ofrece una única URI en la que se realizan todas las peticiones, por lo que no debemos preocuparnos de la semántica implementada por cada API.</li>
+                <li>Es un lenguaje independiente de la fuente de datos. Los datos pueden obtenerse de un servicio web, una base de datos, un fichero, etc.</li>
+            </ul>
+                   
+            
+            <p ALIGN="justify">J. Manuel Garc Rozas de la web paradigmadigital utiliza la expresión <strong>“Todos para Uno y Uno para Todos”</strong>, esto debido a que con GraphQL existe un único punto de acceso a los datos. Aquí una imagen que puso J. Manuel Garc Rozas que lo explica claramente.</p>
+              
+            <img class="img-fluid" src="../../../../static/imagenes/general/todos.png" alt="">
+              
+            <p ALIGN="justify">Como se puede apreciar, lo más importante entonces es <strong>GraphQL Server</strong>.</p>
+            <li class="section-heading">Todos para uno</li>
+            <p ALIGN="justify"><strong>Todos</strong> son o serían aquellos que consuman, es decir, todos los consumidores que accedan a las operaciones o a las consultas y el <strong>uno</strong> sería el GraphQL Server</p>
+            <li class="section-heading">Uno para todos</li>
+            <p ALIGN="justify"><strong>Uno</strong> sería el GraphQL Server y el <strong>todos</strong> serían aquellos subsistemas que estan por detras del GraphQL Server ya que como este actua como fachada o intermedio, todos pasan por él para resolver las consultas u operaciones.</p>
+            
+            <h2 class="section-heading">Un vistazo rápido</h2> 
+            <p ALIGN="justify">El modelo de datos de un API se define en GraphQL mediante un Schema, que contendrá:</p>
+            <ul>
+                <li>Una serie de Types, que representan los objetos.</li>
+                <li><span>Una serie de operaciones</span>
+                     <ul>
+                         <li><strong>Queries.-</strong> Para obtener datos.</li>
+                         <li><strong>Mutations.-</strong> Para realizar modificaciones en el servidor.</li>
+                     </ul>
+                </li>
+            </ul>
+            <p ALIGN="justify">Entonces ahora la pregunta es, <strong>¿Qué es Type?</strong>, pues es la representación de un objeto en donde definimos los fields o campos que lo componen. GraphQL nos ofrece tipos escalares o primitivos como <strong>Int, Float, String, Boolean, ID y Enum.</strong>  Aquí una imagen de como definiríamos un Type.</p>
+              
+            <img class="img-fluid boder w3-hide-small" src="../../../../static/imagenes/general/ejem1.png" alt="">  
+            <img class="img-fluid boder3 w3-hide-medium w3-hide-large" src="../../../../static/imagenes/general/ejem1.png" alt="">  
+              
+            <p ALIGN="justify">Ahora veamos <strong>¿Qué es un Query?</strong>, es un tipo especial dentro del esquema que brinda GraphQL, en ella definiremos campos que serán los puntos de entrada para cada una de las consultas que se deseen definir.</p>  
+            
+            <img class="img-fluid" src="../../../../static/imagenes/general/query.png" alt=""> 
+            <p>El ejemplo que vemos en la imagen se podrá ejecutar de la siguiente manera:</p>
+            <img class="img-fluid" src="../../../../static/imagenes/general/eje.png" alt=""> 
+            <p>Obteniendo así el nombre y edad, además del nombre del planeta asignado.</p>
+            <p>Lo que hemos visto es justamente una de las ventajas que tiene GraphQL sobre la arquitectura REST, ya que en esta última recibiríamos un identificador o id o una URl y se debería formar una nueva petición a la API para obtener así dicha información</p>  
+            
+            <p ALIGN="justify">Finalmente <strong>¿Qué son las Mutations?</strong>, asi como las antes mencionadas, son tipos especiales que nos permiten hacer operaciones tales como: <strong>actualizar, agregar y eliminar</strong>. Un ejemplo sería: </p>  
+            <img class="img-fluid" src="../../../../static/imagenes/general/muta.png" alt="">   
+              
+            <h2 class="section-heading">Suscripciones</h2> 
+            <p ALIGN="justify">Las suscripciones son otra característica de GraphQL. Con ellas, el cliente puede suscribirse a eventos que serán disparados siempre que el estado del servidor cambie. Las suscripciones son implementadas por distintos marcos de trabajo en diferentes maneras.</p>  
+            
+            <h2 class="section-heading">Validación</h2> 
+            <p ALIGN="justify">GraphQL verifica cada consulta o mutación contra el esquema. Esta es de gran utilidad, cuando los datos de entrada tienen una forma compleja. No tenemos que escribir código de validación molesto y frágil ya que GraphQL se encargará de eso por nosotros.</p>    
+              
+            <hr>
+            <p ALIGN="justify">Aquí te dejamos el link al ejemplo de GraphQL para una interfaz de un servicio con Spring Boot y Java que realizó <strong>picodotdev</strong> en su blog:<li ALIGN="justify"><a href="https://picodotdev.github.io/blog-bitix/2017/11/ejemplo-de-graphql-para-una-interfaz-de-un-servicio-con-spring-boot-y-java/">https://picodotdev.github.io/blog-bitix/2017/11/ejemplo-de-graphql-para-una-interfaz-de-un-servicio-con-spring-boot-y-java/</a></li></p>
+              
+            <p ALIGN="justify">Aquí otro ejemplo: <li ALIGN="justify"><a href="https://www.adictosaltrabajo.com/tutoriales/introduccion-a-graphql/">https://www.adictosaltrabajo.com/tutoriales/introduccion-a-graphql/</a></li></p>
+              
+            <p ALIGN="justify">Aqui te dejo el link a su web oficial<li ALIGN="justify"><a href="https://graphql.org/">https://graphql.org/</a></li></p>
+            <p ALIGN="justify">Aqui te dejo el link al tutorial de su web oficial: <li ALIGN="justify"><a href="http://graphql.org/learn/">http://graphql.org/learn/</a></li></p>
+            
+            <p ALIGN="justify">Además te dejamos el vídeo que hicimos explicando que es GraphQL de manera rápida.</p>
+            <iframe width="350" height="195" src="https://www.youtube.com/embed/Ixtx4VttpxE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="w3-hide-large w3-hide-medium"></iframe>
+            <iframe width="720" height="395" src="https://www.youtube.com/embed/Ixtx4VttpxE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="w3-hide-small "></iframe>
+          
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/OpenYourMindSan?lang=es"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/openmindsan/"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com/channel/UCOzf2U3BTng85gsFJHvIInQ?view_as=public"  target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Developer.pe</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!-- Bootstrap core JavaScript -->
+    <script src="../../../../static/general/vendor/jquery/jquery.min.js"></script>
+    <script src="../../../../static/general/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../../../static/general/js/clean-blog.min.js"></script>
+    <script src="../../../../static/base/vendor/jquery-easing/jquery.easing.min.js"></script>  
+    <script src="../../../../static/base/js/creative.min.js"></script>
+      
+          <div id="wpac-comment"></div>
+        <script type="text/javascript">
+            wpac_init = window.wpac_init || [];
+            wpac_init.push({widget: 'Comment', id: 10382});
+            (function() {
+                if ('WIDGETPACK_LOADED' in window) return;
+                WIDGETPACK_LOADED = true;
+                var mc = document.createElement('script');
+                mc.type = 'text/javascript';
+                mc.async = true;
+                mc.src = 'https://embed.widgetpack.com/widget.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+            })();
+        </script>
+  </body>
+
+</html>
